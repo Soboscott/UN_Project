@@ -96,6 +96,23 @@ height: 45px;
 	background-color: #FFF;
 	border-bottom: solid 1px #E5E5E5;
 }
+
+.h-row.small {
+  height: 40px;
+  line-height: 40px;
+}
+
+.h-row.med {
+  height: 60px;
+  line-height: 60px;
+}
+
+.h-row.large {
+  height: 80px;
+  line-height: 80px;
+}
+
+
 p{
   font-weight: 400;
   font-size: 11px;
@@ -108,10 +125,6 @@ p{
   background-color: #fff;
 }
 
-.header {
-	height: 80px;
-	line-height: 80px;
-}
 
 .header span {
 	margin-right: 8px;
@@ -124,6 +137,49 @@ p{
 .selections {
 	height: 60px;
 	line-height: 60px;
+}
+
+.selector {
+  height: 40px;
+  min-width: 260px;
+  float: left;
+  background-color: #F2F2F2;
+  margin-right: 16px;
+  margin-top: 10px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.selector.date {
+  height: 40px;
+  min-width: 40px;
+  float: left;
+  background-color: #F2F2F2;
+  margin-right: 16px;
+  margin-top: 10px;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.selector.label {
+  height: 40px;
+  min-width: 20px;
+  float: left;
+  margin-right: 16px;
+  margin-top: 10px;
+  line-height: 40px;
+  padding-left: 10px;
+  background-color: #fff;
+  color: #4D4D4D;
+}
+
+.selector .tag {
+  background-color: #008ED5;
+  color: #fff;
+  padding: 6px 30px 6px 6px;
+  background-image: url('/images/tag-close.png');
+  background-position: right; 
 }
 
 .results p{
@@ -151,15 +207,59 @@ p{
 #afghanistan{
   color: #fff;
 }
+/* TABELS */
+
+.table>tbody>tr>td {
+  border-right: solid 1px #e5e5e5;;
+  border-left: solid 1px #e5e5e5;;
+
+
+}
+
 #exTab1{
   font-size: 10px;
+  min-height: 800px;
+  margin-left: 200px;
+}
+/* NAV TABS */
+
+ul.nav-tabs {
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+
+.nav-tabs {
+  font-size: 16px;
+}
+
+.nav-tabs li.active a {
+  color: #00ADEF;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #00ADEF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 3px solid #00ADEF;
+}
+
+.table>thead>tr>th.th-active {
+  border-bottom: solid 3px #00ADEF;
+}
+
+.table>thead>tr>th {
+  border-bottom: solid 3px #4D4D4D;
 }
 
 /* FILTER PANEL */
 
 .cont-filter {
   position: absolute;
-  top: 126px;
+  top: 180px;
   left: 0px;
   min-height: 650px;
   width: 170px;
@@ -177,6 +277,8 @@ p{
   padding-left: 10px;
   line-height: 28px;
 }
+
+/* PANEL TITLES */
 
 .cont-filter h3 {
   background-color: #323232;
@@ -225,6 +327,10 @@ color: #fff;
 .data {
 	border: solid 1px #CCC;
 	margin-bottom: 50px;
+}
+
+.data-table {
+background-color: red;
 }
 .input-group{
   width: 50%;
